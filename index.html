@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilo Urbano - Ropa para Hombre</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Estilo Urbano</h1>
+        <nav>
+            <ul class="menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Inicio -->
+        <section id="inicio" class="seccion inicio-bg">
+            <h2>Moda masculina para cada ocasión</h2>
+            <p>Encuentra ropa casual, elegante y deportiva para destacar en cualquier momento.</p>
+        </section>
+
+        <!-- Productos -->
+        <section id="productos" class="seccion">
+            <h2>Nuestros Productos</h2>
+            <div class="productos-grid">
+                <div class="producto">
+                    <img src="img/camisa casual.webp" alt="Camisa casual">
+                    <h3>Camisa Casual</h3>
+                    <p>Comodidad y estilo para tu día a día.</p>
+                </div>
+                <div class="producto">
+                    <img src="img/jhonnychaqueta.jpg" alt="Chaqueta moderna">
+                    <h3>Chaqueta Moderna</h3>
+                    <p>Ideal para climas fríos y con mucho estilo.</p>
+                </div>
+                <div class="producto">
+                    <img src="img/pantalon elegante.webp" alt="Pantalón elegante">
+                    <h3>Pantalón Elegante</h3>
+                    <p>Perfecto para eventos formales y de negocios.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contacto -->
+        <section id="contacto" class="seccion contacto-bg">
+            <h2>Contáctanos</h2>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="correo">Correo:</label>
+                <input type="email" id="correo" name="correo" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Estilo Urbano | Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,124 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Encabezado y menú */
+header {
+    background: linear-gradient(90deg, #b6003d, #e4335f);
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu li a:hover {
+    text-decoration: underline;
+}
+
+/* Secciones */
+.seccion {
+    padding: 30px;
+    text-align: center;
+}
+
+/* Fondo de bienvenida */
+.inicio-bg {
+    background : url(../img/Logotipoweb.png)  center/cover;
+    color: white;
+    padding:350px ;
+    border-radius: 2px;
+}
+
+/* Productos */
+.productos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.producto {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.producto img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.producto:hover {
+    transform: scale(1.03);
+}
+
+/* Contacto con fondo */
+.contacto-bg {
+    background: linear-gradient(90deg, #e66a6a, #ee7474);
+    border-radius: 8px;
+}
+
+/* Formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+}
+
+input, textarea, button {
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #f7851b;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #f1aa0e;
+}
+
+/* Footer */
+footer {
+    background-color: #f04419;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .productos-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .menu {
+        flex-direction: column;
+    }
+}
